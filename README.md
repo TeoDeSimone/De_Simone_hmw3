@@ -56,5 +56,5 @@ After this, open another terminal and use the command:
       
 Open another terminal and use the following command specifying as node arguments task:= pos | lap | merge and cmd_interface:= velocity | effort :
       
-      $ ros2 run ros2_kdl_package ros2_kdl_vision_control --ros-args -p cmd_interface:=velocity -p task:=lap
+      $ ros2 run ros2_kdl_package ros2_kdl_vision_control --ros-args -p cmd_interface:="<cmd_interface>" -p task:="<task>"
       
