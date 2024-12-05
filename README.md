@@ -1,4 +1,4 @@
-Repository for Homework 3 of Robotics Labs course made by Marco Bartone P38000237, Giacomo Caiazzo P38000236, Matteo De Simone P38000232, Nicola Monetti P38000238.
+Repository for Homework 3 of Robotics Labs course made by Matteo De Simone P38000232, Marco Bartone P38000237, Giacomo Caiazzo P38000236,  Nicola Monetti P38000238.
 
 # Robotics Lab - Homework 3
 
