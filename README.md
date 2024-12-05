@@ -54,7 +54,7 @@ After this, open another terminal and use the command:
 
       $ ros2 launch aruco_ros simple_single.launch.py
       
-Open another terminal and use the following command specifying as node arguments task:= pos|lap|merge and cmd_interface:= velocity|effort :
+Open another terminal and use the following command specifying as node arguments task:= pos|lap|merge and cmd_interface:= velocity|effort (be sure to not launch "velocity"-"merge" combination):
       
       $ ros2 run ros2_kdl_package ros2_kdl_vision_control --ros-args -p cmd_interface:="<cmd_interface>" -p task:="<task>"
       
