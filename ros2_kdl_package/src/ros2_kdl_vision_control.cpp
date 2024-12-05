@@ -92,13 +92,18 @@ class Iiwa_pub_sub : public rclcpp::Node
             error_norm_publisher_ = this->create_publisher<FloatArray>("/cart_err_norm", 10);
             error_norm_publisher_->publish(error_msg); //Publish per aprire il topic
 
-
-
-            std::cout<<"Insert position offset in R P Y:";
-            std::cin >> off_roll >> off_pitch >> off_yaw;
-            std::cout<<"Insert orientation offset in X Y Z:";
-            std::cin >> off_x >> off_y >> off_z;
-
+            if(task_!="lap")
+            {
+                if(task_=="pos")
+                {
+                    std::cout<<"Insert angular offset in R P Y:";
+                    std::cin >> off_roll >> off_pitch >> off_yaw;
+                }
+                
+                std::cout<<"Insert linear offset in X Y Z:";
+                std::cin >> off_x >> off_y >> off_z;
+            }
+            
             orient_offset_= KDL::Rotation::RPY(off_roll, off_pitch, off_yaw);
 
                         
